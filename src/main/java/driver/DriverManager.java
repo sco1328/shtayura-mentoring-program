@@ -20,7 +20,7 @@ public class DriverManager {
             case "firefox-ubuntu":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 System.setProperty("webdriver.gecko.driver",
-                        "src/main/resources/drivers/geckodriver-v0.29.1-linux64.tar.gz");
+                        "src/main/resources/drivers/geckodriver.tar.gz");
                 setDriver(new FirefoxDriver(firefoxOptions));
                 driver.manage().window().maximize();
                 break;
