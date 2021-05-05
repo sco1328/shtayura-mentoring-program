@@ -17,7 +17,7 @@ public class DriverManager {
 
     public void createDriver() {
         switch (driverType) {
-            case "firefox-ubuntu":
+            case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 System.setProperty("webdriver.gecko.driver",
                         "src/main/resources/drivers/geckodriver.tar.gz");
@@ -28,7 +28,7 @@ public class DriverManager {
             default:
                 ChromeOptions chromeOptions = new ChromeOptions();
                 System.setProperty("webdriver.chrome.driver",
-                        "src/main/resources/drivers/chromedriver.exe");
+                        "src/main/resources/drivers/chromedriver");
                 chromeOptions.addArguments("--start-maximized");
                 setDriver(new ChromeDriver(chromeOptions));
                 break;
