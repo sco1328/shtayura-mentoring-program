@@ -31,7 +31,7 @@ public class DriverManager {
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
                 System.setProperty("webdriver.chrome.driver",
-                        "/usr/bin/chromedriver");
+                        "/home/roman/jenkins/chromedriver");
                 chromeOptions.addArguments("--start-maximized");
                 setDriver(new ChromeDriver(chromeOptions));
                 break;
