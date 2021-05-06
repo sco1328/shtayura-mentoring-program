@@ -27,6 +27,7 @@ public class DriverManager {
             case "chrome":
             default:
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
                 System.setProperty("webdriver.chrome.driver",
                         "/usr/bin/chromedriver");
                 chromeOptions.addArguments("--start-maximized");
