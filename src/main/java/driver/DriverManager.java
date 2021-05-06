@@ -27,6 +27,7 @@ public class DriverManager {
             case "chrome":
             default:
                 ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--no-sandbox");
                 System.setProperty("webdriver.chrome.driver",
                         "/home/roman/jenkins/chromedriver_linux64/chromedriver");
                 chromeOptions.addArguments("--start-maximized");
