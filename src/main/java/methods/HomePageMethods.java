@@ -25,12 +25,12 @@ public class HomePageMethods extends BasePageMethods {
         LOGGER.info("Verify key elements are displayed");
         SoftAssertions softAssertions = new SoftAssertions();
         softAssertions.assertThat(isElementDisplayed(homePage.getLogo())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getServicesTabButton())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getOurWorkTabButton())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getHowWeDoItTabButton())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getInsightsTabButton())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getAboutTabButton())).isTrue();
-        softAssertions.assertThat(isElementDisplayed(homePage.getCareersTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getServicesTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getOurWorkTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getHowWeDoItTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getInsightsTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getAboutTabButton())).isTrue();
+//        softAssertions.assertThat(isElementDisplayed(homePage.getCareersTabButton())).isTrue();
         softAssertions.assertAll();
     }
 
