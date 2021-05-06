@@ -29,9 +29,9 @@ public class DriverManager {
             case "chrome":
             default:
                 ChromeOptions chromeOptions = new ChromeOptions();
-//                chromeOptions.addArguments("--no-sandbox");
+                chromeOptions.addArguments("--no-sandbox");
 //                chromeOptions.addArguments("--headless");
-//                chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
                 System.setProperty("webdriver.chrome.driver",
                         "/usr/bin/chromedriver");
                 try {
