@@ -28,7 +28,7 @@ public class DriverManager {
             default:
                 ChromeOptions chromeOptions = new ChromeOptions();
                 System.setProperty("webdriver.chrome.driver",
-                        "src/main/resources/drivers/chromedriver");
+                        "/usr/bin/chromedriver");
                 chromeOptions.addArguments("--start-maximized");
                 setDriver(new ChromeDriver(chromeOptions));
                 break;
