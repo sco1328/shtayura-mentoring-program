@@ -26,6 +26,7 @@ public class BasePageMethods {
     }
 
     public boolean isElementDisplayed(WebElement element) {
+        waitForElementDisplayed(element);
         LOGGER.info("Verify element is displayed");
         return element.isDisplayed();
     }
